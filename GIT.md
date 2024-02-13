@@ -20,16 +20,53 @@ CONTRASEÑA: 105462
 ```
 
 ## Configuración GIT
-1º Paso: configuración
+Configuración usuario:
 ```
 git config --global user.name "i.martinpena"
 git config --global user.email i.martinpena@usp.ceu.es
 ```
-2º Paso: commit 
+
+Inicializa un nuevo repositorio de Git en el directorio actual:
 ```
-git commit -am "comentarios"
+git init
 ```
-3º Paso: push
+Clona un repositorio existente desde una URL: git clone [url]
 ```
-git push
+git clone https://github.com/ejemplo/repo.git
+```
+
+Muestra el estado del repositorio, incluidos los cambios no rastreados o en espera:
+```
+git status
+```
+
+Agrega un archivo al área de preparación (staging area) para el próximo commit: git add [archivo]
+```
+git add ejemplo.txt
+git add *
+```
+
+Realiza un commit de los cambios preparados con un mensaje: 
+```
+git commit -m "Añade ejemplo.txt al proyecto"
+```
+
+Envía los commits al repositorio remoto: git push [remote] [rama]
+```
+git push origin master
+```
+
+Actualiza el repositorio local con los cambios del repositorio remoto: git pull [remote] [rama]
+```
+git pull origin master
+```
+
+Crea una nueva rama: git branch [nombre-rama]
+```
+git branch nueva-rama
+```
+
+Cambia a otra rama: git checkout [nombre-rama]
+```
+git checkout nueva-rama
 ```
