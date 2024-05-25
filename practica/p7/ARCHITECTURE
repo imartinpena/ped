@@ -1,0 +1,69 @@
+**Manual de Arquitectura (ARCHITECTURE) - Práctica 7**
+
+### Descripción General
+La arquitectura de la práctica 7 se basa en un sistema cliente-servidor para implementar dos aplicaciones:
+1. **Sistema de Chat:** Un sistema de chat que permite a los clientes comunicarse entre sí a través de un servidor central.
+2. **Sistema de Noticias:** Un sistema que permite a los clientes compartir y leer noticias de forma colaborativa.
+
+### Componentes Principales
+Ambas aplicaciones comparten una estructura de arquitectura similar basada en sockets TCP/IP y siguen un patrón de comunicación cliente-servidor.
+
+#### 1. Sistema de Chat
+- **Servidor de Chat (`serv7_chat.py`):**
+  - Acepta conexiones entrantes desde múltiples clientes usando sockets TCP.
+  - Mantiene un registro de clientes conectados, asegurando nombres únicos.
+  - Distribuye mensajes recibidos a todos los clientes conectados.
+  - Permanece activo hasta que se detiene manualmente.
+  
+- **Cliente de Chat (`cli7_chat.py`):**
+  - Se conecta al servidor proporcionando un nombre de usuario único.
+  - Envía mensajes al servidor para su distribución a otros clientes.
+  - Recibe y muestra mensajes provenientes del servidor.
+
+#### 2. Sistema de Noticias
+- **Servidor de Noticias (`serv7_news.py`):**
+  - Acepta conexiones de múltiples clientes usando sockets TCP.
+  - Permite a los clientes enviar artículos que se distribuyen a todos los demás.
+  - Mantiene un registro de los artículos publicados por un mínimo de 4 días.
+  - Gestiona la publicación y recuperación de noticias.
+
+- **Cliente de Noticias (`cli7_news.py`):**
+  - Se conecta al servidor proporcionando un nombre de usuario.
+  - Envía nuevos artículos al servidor para su publicación.
+  - Solicita y recibe artículos de otros clientes.
+
+### Diagramas de Comunicación
+
+#### Sistema de Chat
+1. **Flujo de Mensajes:**
+   - Cliente → Servidor: Envío de mensaje.
+   - Servidor → Clientes: Redistribución del mensaje.
+
+2. **Flujo de Conexiones:**
+   - Los clientes se conectan al servidor usando sockets TCP.
+   - El servidor valida y registra las identidades de los clientes.
+
+#### Sistema de Noticias
+1. **Flujo de Artículos:**
+   - Cliente → Servidor: Publicación de un nuevo artículo.
+   - Servidor → Clientes: Distribución de los artículos.
+
+2. **Flujo de Conexiones:**
+   - Los clientes se conectan al servidor utilizando sockets TCP.
+   - El servidor registra las identidades y artículos de los clientes.
+
+### Diseño de Código
+- **Sockets TCP/IP:** Permiten la conexión orientada a conexión, proporcionando una comunicación confiable.
+- **Estructuras de Datos:**
+  - **Listas:** Para gestionar clientes conectados.
+  - **Diccionarios:** Para mapear los usuarios con sus identidades y artículos.
+- **Funciones:**
+  - **Servidor:** `aceptar_conexiones()`, `distribuir_mensajes()`, etc.
+  - **Cliente:** `enviar_mensaje()`, `recibir_mensaje()`, etc.
+
+### Consideraciones Adicionales
+- **Seguridad:** Asegurar que los datos transmitidos entre el cliente y el servidor sean manejados de forma segura.
+- **Escalabilidad:** La aplicación es capaz de gestionar múltiples clientes simultáneamente sin detenerse.
+- **Configurabilidad:** Direcciones IP, puertos y otros parámetros pueden ser configurados por el usuario.
+
+Si necesitas más detalles, consulta el código fuente o los otros manuales de la documentación.

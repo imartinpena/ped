@@ -1,0 +1,23 @@
+Manual de Instalación
+=====================
+
+Este manual proporciona instrucciones para instalar y configurar las aplicaciones Cliente-Servidor mediante FIFOs.
+
+Requisitos:
+- Sistema operativo basado en Unix/Linux.
+- Python 3.
+
+Instalación Común:
+1. Clone o descargue el código fuente de la aplicación.
+2. Navegue al directorio donde se encuentra el código fuente.
+3. Asegúrese de que los scripts `serv3.py` y `cli3.py` en cada subdirectorio sean ejecutables. Si no, utilice `chmod +x`.
+
+Instalación y Ejecución de Application1:
+- Navegue al directorio application1.
+- Inicie el servidor con `make runApp1Serv`.
+- En otra terminal, inicie el cliente con `make runApp1Cli`.
+
+Instalación y Ejecución de Application2:
+- Navegue al directorio application2.
+- Inicie el servidor con `make runApp2Serv`.
+- En otra terminal, inicie el cliente con `make runApp2Cli`.

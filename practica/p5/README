@@ -1,0 +1,38 @@
+Manual de Usuario
+=================
+
+Descripción  
+Esta práctica 5 implementa dos aplicaciones cliente-servidor usando sockets UDP de Internet (PF_INET). El propósito de las aplicaciones es permitir que el cliente envíe una solicitud al servidor, quien responderá con el contenido de un archivo (app1) o con la fecha y hora actuales (app2).
+
+Requisitos  
+- Sistema operativo compatible con Python (Linux, macOS o Windows).
+- Python 3.8 o superior.
+
+Aplicación 1: Cliente-Servidor de Ficheros  
+1. El servidor espera recibir una solicitud con el nombre de un archivo.
+2. El cliente proporciona el nombre de un archivo al servidor.
+3. El servidor responde con el contenido del archivo o un mensaje de error si no puede abrirlo.
+4. El cliente muestra el contenido en la salida estándar.
+
+Aplicación 2: Cliente-Servidor de Fecha y Hora  
+1. El servidor recibe una solicitud para la fecha y hora actuales.
+2. El cliente envía esta solicitud al servidor.
+3. El servidor responde con la fecha y hora actuales.
+4. El cliente muestra la respuesta en la salida estándar.
+
+Instrucciones de Uso  
+1. **Iniciar el Servidor**:  
+   - Abre una terminal, navega hasta el directorio de la aplicación (`app1` o `app2`).
+   - Ejecuta el script correspondiente para iniciar el servidor:  
+     `python serv5_1.py` o `python serv5_2.py`
+
+2. **Iniciar el Cliente**:  
+   - Abre una nueva terminal.
+   - Navega hasta el directorio de la aplicación (`app1` o `app2`).
+   - Ejecuta el script del cliente con:  
+     `python cli5_1.py` o `python cli5_2.py`
+
+Notas Adicionales  
+- Asegúrate de que los puertos utilizados por cada aplicación no estén ocupados por otros servicios.
+- El servidor debe iniciarse antes que el cliente para que este último pueda conectarse correctamente.
+- Configura la dirección IP y el puerto según corresponda a tu red y a la aplicación.

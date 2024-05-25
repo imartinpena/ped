@@ -1,0 +1,23 @@
+Manual de usuario.
+
+Requisitos: 
+
+- La partida consta de 10 rondas.
+- En cada ronda, hay uno o dos intentos para derribar 10 bolos.
+- Un strike es cuando se derriban todos los bolos en el primer intento de una ronda.
+- Un spare es cuando se derriban todos los bolos en el segundo intento de una ronda.
+- En caso de strike, la puntuación de la ronda es 10 más la suma de los bolos derribados en los dos siguientes lanzamientos.
+- En caso de spare, la puntuación es 10 más los bolos derribados en el siguiente lanzamiento.
+- Si no es ni strike ni spare, la puntuación es la suma de los bolos derribados en los dos intentos de la ronda.
+
+Comandos de Ejecución:
+
+- Ejecución del programa:
+```
+python3 kataDeBolos.py
+```
+
+- Ejecución de los tests:
+```
+python3 -m unittest kataDeBolosTest
+```

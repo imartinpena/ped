@@ -1,0 +1,73 @@
+Manual de instalación, administración y configuración
+=====================================================
+
+Este documento proporciona las instrucciones para instalar y configurar el entorno necesario para ejecutar la aplicación cliente-servidor de la práctica 6.
+
+Instalación de Python (si aún no está instalado)
+------------------------------------------------
+1. Abre una terminal.
+
+2. Actualiza el índice de paquetes del sistema:
+   ```
+   sudo apt update
+   ```
+
+3. Instala Python 3:
+    ```
+    sudo apt install python3
+    ```
+
+4. Verifica la instalación de Python:
+    ```
+    python3 --version
+    ```
+
+Configuración de la Aplicación
+------------------------------------------------
+
+1. Descarga el código fuente de la aplicación desde el repositorio o descomprime el paquete proporcionado.
+
+2. Navega hasta el directorio donde se encuentra el código fuente.
+
+Ejecución de la Aplicación
+------------------------------------------------
+
+1. Para compilar y ejecutar la aplicación, utiliza el comando make en el directorio del código fuente:
+    ```
+    make
+    ```
+
+2. Para iniciar el servidor de la aplicación 1 (lector de archivos), ejecuta:
+    ```
+    make runApp1Serv
+    ```
+
+3. Para iniciar el cliente de la aplicación 1, ejecuta:
+    ```
+    make runApp1Cli
+    ```
+
+4. Para iniciar el servidor de la aplicación 2 (fecha y hora), ejecuta:
+    ```
+    make runApp2Serv
+    ```
+
+5. Para iniciar el cliente de la aplicación 2, ejecuta:
+    ```
+    make runApp2Cli
+    ```
+
+
+Limpieza
+------------------------------------------------
+
+Para limpiar los archivos temporales y el caché, usa:
+    ```
+    make clean
+    ```
+
+Nota: Asegúrate de que los permisos de los archivos ejecutables sean adecuados. Si es necesario, puedes asignar permisos de ejecución utilizando:
+
+    ```
+    chmod +x app1/cli6_1.py app1/serv6_1.py app2/cli6_2.py app2/serv6_2.py
+    ```

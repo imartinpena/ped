@@ -1,0 +1,32 @@
+### Manual de usuario.
+
+# Práctica 4: Cliente-Servidor mediante sockets UDS
+
+Esta práctica consiste en dos aplicaciones cliente-servidor usando sockets UDS:
+
+- **App1:** Transfiere el contenido de un archivo del servidor al cliente.
+- **App2:** Envía la fecha y hora actual del servidor al cliente.
+
+## Ejecución
+
+Para ejecutar cualquiera de las aplicaciones, use el comando correspondiente desde el directorio raíz:
+
+### App1 (Fichero)
+
+```
+make runApp1
+```
+
+
+### App2 (Fecha y Hora)
+
+```
+make runApp2
+```
+
+### Para limpiar archivos compilados y otros residuos:
+
+```
+make clean
+```
+

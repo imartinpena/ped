@@ -1,0 +1,64 @@
+**Manual de Usuario (README) - Práctica 7**
+
+### Introducción
+La práctica 7 incluye dos aplicaciones cliente-servidor diferentes:
+
+1. **Sistema de Chat en Línea:** Permite a múltiples usuarios conectarse a un servidor de chat, identificarse con un nombre único y participar en conversaciones.
+2. **Sistema de Noticias:** Permite a los clientes conectarse a un servidor, compartir noticias y recibir artículos de otros usuarios.
+
+### Requisitos Previos
+- Python 3.6 o superior
+- Sistema operativo compatible con sockets de Internet (Windows, Linux o macOS)
+
+### Configuración
+1. **Descarga el Proyecto:**
+   - Clona el repositorio o descarga el paquete del proyecto y descomprime el archivo si es necesario.
+   
+2. **Estructura del Proyecto:**
+   - `chat/`: archivos para el sistema de chat (`cli7_chat.py` y `serv7_chat.py`)
+   - `news/`: archivos para el sistema de noticias (`cli7_news.py` y `serv7_news.py`)
+   - `Makefile`: archivo que permite ejecutar comandos específicos
+
+### Uso del Sistema de Chat
+1. **Ejecutar el Servidor de Chat:**
+   - Abre una terminal y navega hasta el directorio raíz del proyecto.
+   - Ejecuta el siguiente comando:
+   ```bash
+   make chatServ
+   ```
+   - Proporciona la dirección IP y el puerto para el servidor según las indicaciones.
+
+2. **Ejecutar el Cliente de Chat:**
+   - Abre otra terminal y navega hasta el directorio raíz del proyecto.
+   - Ejecuta el siguiente comando:
+   ```bash
+   make chatCli
+   ```
+   - Introduce la dirección IP del servidor y el puerto.
+   - Proporciona un nombre de usuario único para unirte al chat.
+
+### Uso del Sistema de Noticias
+1. **Ejecutar el Servidor de Noticias:**
+   - Abre una terminal y navega hasta el directorio raíz del proyecto.
+   - Ejecuta el siguiente comando:
+   ```bash
+   make newsServ
+   ```
+   - Proporciona la dirección IP y el puerto para el servidor según las indicaciones.
+
+2. **Ejecutar el Cliente de Noticias:**
+   - Abre otra terminal y navega hasta el directorio raíz del proyecto.
+   - Ejecuta el siguiente comando:
+   ```bash
+   make newsCli
+   ```
+   - Introduce la dirección IP del servidor y el puerto.
+   - Proporciona tu nombre de usuario y empieza a compartir artículos o recibir noticias.
+
+### Consejos de Resolución de Problemas
+- **Error de Conexión:** Verifica que el servidor esté ejecutándose y que los puertos utilizados no estén bloqueados por un firewall.
+- **Nombres Duplicados:** Asegúrate de que cada cliente use un nombre único.
+- **Error de Puerto:** Si recibes un error relacionado con el puerto en uso, verifica que otro programa no esté utilizando el mismo puerto.
+
+### Soporte
+Si necesitas ayuda adicional, consulta el documento `INSTALL` o contacta al equipo de desarrollo.

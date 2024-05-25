@@ -1,0 +1,29 @@
+Manual del Usuario:
+
+Este programa imprime por pantalla "Hola mundo" (Python).
+
+Para ejecutar el programa siga los siguientes pasos:
+
+1. Asegúrese de tener instalado el interprete de Python. Si no es así, puede consultar la documentación
+y seguir los pasos de instalación en: https://www.python.org/downloads/
+
+Si deseas instalar python3 por terminal: 
+
+    - Para macOS:
+    ```
+    brew install python3
+    ```
+    - Para Windows:
+    ```
+    choco install python
+    ```
+    - Para Ubuntu/Debian y derivados:
+    ```
+    sudo apt-get update
+    sudo apt-get install python3
+    ```
+
+2. Una vez instalado, diríjase al directorio donde se encuentra el archivo 'Makefile' y ejecute el siguiente comando:
+```
+make run
+```

@@ -1,0 +1,35 @@
+Manual de Usuario
+=================
+
+Descripción
+-----------
+Este manual proporciona información detallada sobre cómo utilizar la aplicación cliente-servidor que permite intercambiar mensajes entre un cliente y un servidor utilizando pipes en un entorno Unix. La aplicación puede operar en dos modos: uno para leer el contenido de un archivo (application1) y otro para obtener la fecha y hora actual (application2).
+
+Requisitos
+----------
+- Sistema operativo Unix/Linux.
+- Python 3 instalado en el sistema.
+
+Instrucciones de Uso
+--------------------
+1. Ejecutar la Aplicación:
+   - Abre una terminal.
+   - Navega hasta el directorio donde se encuentra `cliserv2.py`.
+   - Ejecuta el script utilizando Python 3 y proporciona el argumento necesario según la aplicación que desees ejecutar:
+     - Para application1 (lectura de archivo): `python3 cliserv2.py <ruta_del_archivo>`
+     - Para application2 (fecha y hora): `python3 cliserv2.py`
+
+   El script `cliserv2.py` automáticamente determinará si actuar como cliente o servidor basándose en la operación solicitada.
+
+2. Interacción Cliente-Servidor:
+   - El cliente enviará una solicitud al servidor (el nombre de un archivo o una petición de fecha y hora).
+   - El servidor procesará la solicitud y enviará una respuesta al cliente.
+   - El cliente mostrará la respuesta recibida del servidor en la terminal.
+
+3. Finalización:
+   - La ejecución de la aplicación finalizará automáticamente después de completar la interacción cliente-servidor.
+
+Soporte
+-------
+Si encuentras algún problema o tienes alguna pregunta sobre la aplicación, no dudes en contactar al equipo de desarrollo o consultar la documentación adicional proporcionada.
+

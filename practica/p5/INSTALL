@@ -1,0 +1,54 @@
+Manual de Instalación, Administración y Configuración
+======================================================
+
+Requisitos previos  
+- Un sistema operativo compatible con Python (Linux, macOS o Windows).
+- Python 3.8 o superior instalado.
+
+Instalación de Python  
+1. Linux/macOS:
+   - Verifica si Python ya está instalado:
+     `python3 --version`
+   - Si no está instalado, utiliza el gestor de paquetes correspondiente:
+     `sudo apt-get install python3` (Ubuntu/Debian)  
+     `brew install python` (macOS con Homebrew)
+
+2. Windows:
+   - Descarga el instalador desde https://www.python.org/downloads.
+   - Sigue el asistente de instalación, asegurándote de marcar la opción "Add Python to PATH".
+   - Verifica la instalación desde la terminal:
+     `python --version`
+
+Descarga de la Aplicación  
+1. Clona el repositorio desde el sistema de control de versiones:
+   
+   `git clone <URL_del_repositorio>`
+
+2. Configuración de la Aplicación
+
+- Accede al directorio de la aplicación:
+
+    `cd <directorio_de_la_aplicacion>`
+
+- Comprueba que los scripts Python tengan permisos de ejecución:
+
+    `chmod +x app1/*.py`
+    `chmod +x app2/*.py`
+
+3. Ejecución de la Aplicación
+
+- Inicia el servidor para la primera aplicación:
+
+    `python app1/serv5_1.py`
+
+- Luego inicia el cliente:
+
+    `python app1/cli5_1.py`
+
+- Inicia el servidor para la segunda aplicación:
+
+    `python app2/serv5_2.py`
+
+Luego inicia el cliente:
+
+    `python app2/cli5_2.py`

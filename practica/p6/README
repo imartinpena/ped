@@ -1,0 +1,60 @@
+Manual de Usuario
+=================
+
+Descripción
+-----------
+Este manual proporciona información sobre cómo utilizar las aplicaciones cliente-servidor de la práctica 6, las cuales permiten intercambiar datos utilizando sockets TCP de Internet.
+
+Requisitos
+----------
+- Sistema operativo Unix/Linux o macOS.
+- Python 3 instalado en el sistema.
+
+Aplicación 1: Lector de Archivos
+-------------------------------
+1. Iniciar el Servidor:
+   - Abre una terminal.
+   - Navega hasta el directorio `app1`.
+   - Ejecuta el comando:
+   ```
+   make runApp1Serv
+   ```
+   - Introduce la dirección y puerto en los que el servidor escuchará.
+
+2. Iniciar el Cliente:
+   - Abre una nueva terminal.
+   - Navega hasta el directorio `app1`.
+   - Ejecuta el comando:
+   ```
+   make runApp1Cli
+   ```
+   - Introduce la dirección y puerto del servidor, y el path del archivo que quieres leer.
+
+Aplicación 2: Fecha y Hora
+--------------------------
+1. Iniciar el Servidor:
+   - Abre una terminal.
+   - Navega hasta el directorio `app2`.
+   - Ejecuta el comando:
+   ```
+   make runApp2Serv
+   ```
+   - Introduce la dirección y puerto en los que el servidor escuchará.
+
+2. Iniciar el Cliente:
+   - Abre una nueva terminal.
+   - Navega hasta el directorio `app2`.
+   - Ejecuta el comando:
+   ```
+   make runApp2Cli
+   ```
+   - Introduce la dirección y puerto del servidor para recibir la fecha y hora actuales.
+
+Interacción Cliente-Servidor
+----------------------------
+- Asegúrate de que el servidor está activo antes de iniciar el cliente.
+- El cliente solicitará la información al servidor y mostrará los resultados en la terminal.
+
+Soporte
+-------
+Si tienes preguntas o encuentras algún problema, consulta la sección de preguntas frecuentes o contacta al equipo de desarrollo.

@@ -1,0 +1,11 @@
+# Manual de instalación, administración y configuración.
+
+Siga estos pasos para configurar el entorno necesario para ejecutar las aplicaciones:
+
+1. Instale Python (si aún no está instalado):
+   - Linux: `sudo apt install python3`
+   - Windows: Descargue desde [python.org](https://www.python.org/downloads/windows/)
+
+2. Descargue los archivos fuente del proyecto.
+
+3. Navegue al directorio del proyecto y ejecute `make` para iniciar la aplicación deseada.

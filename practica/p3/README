@@ -1,0 +1,15 @@
+Manual de Usuario
+=================
+
+Descripción:
+Este manual ofrece instrucciones sobre cómo utilizar las aplicaciones Cliente-Servidor que comunican un cliente y un servidor mediante FIFOs en Unix/Linux.
+
+Application1 (Contenido de Archivo):
+1. Navegue al directorio application1.
+2. Inicie el servidor: `make runApp1Serv`.
+3. En otra terminal, inicie el cliente: `make runApp1Cli`.
+
+Application2 (Fecha y Hora):
+1. Navegue al directorio application2.
+2. Inicie el servidor: `make runApp2Serv`.
+3. En otra terminal, inicie el cliente: `make runApp2Cli`.

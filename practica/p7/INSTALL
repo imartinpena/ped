@@ -1,0 +1,70 @@
+**Práctica 7 - Manual de Instalación, Administración y Configuración**
+
+### Introducción
+Este documento describe cómo instalar, configurar y ejecutar la práctica 7, que implementa dos sistemas: un chat en línea y un sistema de noticias, utilizando sockets TCP.
+
+### Instalación de Python (si es necesario)
+1. **Linux/macOS:**
+   - Abre una terminal y ejecuta:
+   ```bash
+   sudo apt update  # Actualiza los índices de los paquetes (para Linux)
+   sudo apt install python3  # Instala Python 3
+   python3 --version  # Verifica la instalación
+   ```
+   
+2. **Windows:**
+   - Descarga el instalador de Python desde [python.org](https://www.python.org/downloads/) y sigue las instrucciones del instalador.
+   - Asegúrate de que `python` esté en el `PATH` marcando la opción durante la instalación.
+   - Verifica la instalación ejecutando `python --version` en el símbolo del sistema.
+
+### Configuración de la Aplicación
+1. **Descarga el Proyecto:**
+   - Clona el repositorio o descarga el paquete desde la plataforma correspondiente.
+   - Descomprime el paquete si es necesario.
+   
+2. **Estructura del Proyecto:**
+   - `chat/`: contiene los archivos para el chat (`cli7_chat.py`, `serv7_chat.py`).
+   - `news/`: contiene los archivos para el sistema de noticias (`cli7_news.py`, `serv7_news.py`).
+   - `Makefile`: archivo de configuración para facilitar la ejecución.
+
+### Ejecución de la Aplicación
+1. **Ejecutar el Servidor de Chat:**
+   - Abre una terminal y navega hasta el directorio raíz del proyecto.
+   - Ejecuta:
+   ```bash
+   make chatServ
+   ```
+   - Sigue las instrucciones en pantalla para configurar el servidor.
+
+2. **Ejecutar el Cliente de Chat:**
+   - Abre otra terminal y navega hasta el directorio raíz del proyecto.
+   - Ejecuta:
+   ```bash
+   make chatCli
+   ```
+   - Sigue las instrucciones para conectarte al servidor.
+
+3. **Ejecutar el Servidor de Noticias:**
+   - Abre una terminal y navega hasta el directorio raíz del proyecto.
+   - Ejecuta:
+   ```bash
+   make newsServ
+   ```
+   - Sigue las instrucciones en pantalla para configurar el servidor.
+
+4. **Ejecutar el Cliente de Noticias:**
+   - Abre otra terminal y navega hasta el directorio raíz del proyecto.
+   - Ejecuta:
+   ```bash
+   make newsCli
+   ```
+   - Sigue las instrucciones para conectarte al servidor.
+
+### Limpieza
+Para eliminar archivos temporales y otros residuos, ejecuta:
+```bash
+make clean
+```
+
+### Soporte
+Si encuentras problemas, verifica los archivos de salida o asegúrate de que los puertos especificados no estén en uso. También puedes contactar al equipo de desarrollo para ayuda adicional.

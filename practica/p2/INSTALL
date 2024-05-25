@@ -1,0 +1,33 @@
+Manual de instalación, administración y configuración
+=====================================================
+
+Este documento proporciona las instrucciones para instalar, configurar y ejecutar la aplicación cliente-servidor mediante pipes en Python.
+
+Instalación de Python (si aún no está instalado)
+------------------------------------------------
+1. Abre una terminal.
+2. Actualiza el índice de paquetes del sistema:
+   `sudo apt update`
+3. Instala Python 3:
+   `sudo apt install python3`
+4. Verifica la instalación de Python:
+   `python3 --version`
+
+Configuración de la Aplicación
+------------------------------
+1. Descarga el código fuente de la aplicación desde el repositorio o descomprime el paquete proporcionado.
+2. Navega hasta el directorio donde se encuentra el código fuente (`cliserv2.py`).
+
+Ejecución de la Aplicación
+--------------------------
+1. Para compilar y ejecutar la aplicación, utiliza el comando `make` en el directorio del código fuente:
+   `make all`
+
+   Esto ejecutará las aplicaciones cliente y servidor definidas en `Makefile`.
+
+2. Para ejecutar manualmente la aplicación, puedes utilizar:
+   `python3 cliserv2.py <argumento>`, donde `<argumento>` dependerá de la aplicación específica que desees ejecutar (por ejemplo, el nombre de un archivo para la aplicación de ficheros o sin argumentos para la aplicación de fecha y hora).
+
+Nota: Asegúrate de que los permisos de los archivos sean adecuados. Si es necesario, puedes asignar permisos de ejecución al script de Python utilizando:
+   `chmod +x cliserv2.py`
+

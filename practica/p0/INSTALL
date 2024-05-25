@@ -1,0 +1,3 @@
+Basta con escribir 'make run' para conseguir el "hello world" en Python.
+Al ejecutar este comando, se ejecutará:
+python3 hw.py (Hola mundo)
