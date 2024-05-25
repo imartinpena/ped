@@ -3,6 +3,8 @@
 Configuración usuario:
 ```
 git config --global user.name "i.martinpena"
+```
+```
 git config --global user.email i.martinpena@usp.ceu.es
 ```
 
