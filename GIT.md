@@ -1,10 +1,31 @@
 ## Credenciales 
+
+Configuración usuario:
 ```
-USER: i.martinpena
+git config --global user.name "i.martinpena"
+```
+```
+git config --global user.email i.martinpena@usp.ceu.es
+```
 
-CORREO: i.martinpena@usp.ceu.es
+CLONAR:
+```
+git clone https://git.eps.ceu.es/ped/examen/i.martinpena
+```
 
-CONTRASEÑA: 105462
+USER:
+```
+i.martinpena
+```
+
+CORREO:
+```
+i.martinpena@usp.ceu.es
+```
+
+CONTRASEÑA: 
+```
+105462
 ```
 
 ## Resumen comandos de GIT
