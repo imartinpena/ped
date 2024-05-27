@@ -1,5 +1,7 @@
 ## Credenciales 
 
+git config credential.helper "cache --timeout=7200"
+
 Configuración usuario:
 ```
 git config --global user.name "i.martinpena"
