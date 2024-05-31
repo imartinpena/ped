@@ -1,6 +1,9 @@
 ## Credenciales 
 
+Para que no te pida la contraseña todo el rato:
+```
 git config credential.helper "cache --timeout=7200"
+```
 
 Configuración usuario:
 ```
